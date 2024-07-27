@@ -6,6 +6,9 @@ const { signToken, AuthenticationError } = require('../utils/auth');
 const resolvers = {
     // Define the resolver function for the getSingleUser query
     Query: {
+        me: async(_, __, { user }) => {
+            return user;
+        },
         // The function takes in the context object, which contains the user object, and the arguments object which contains the userId and username
         getSingleUser: async (_, { userId, username }, { user })=> {
             try {
@@ -28,7 +31,7 @@ const resolvers = {
     // Define the resolver function for the Mutation type
     Mutation: {
         // Define the resolver function for the creteUser mutation
-        creteUser: async (_, { userInput }) => {
+        createUser: async (_, { userInput }) => {
             try {
                 // Create a new user using the userInput
                 const user = await User.create(userInput);
