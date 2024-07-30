@@ -48,14 +48,11 @@ Or:
 
 ## Contribution
 
-- Web-dev-projects: https://github.com/judygab/web-dev-projects.git
 - BootCampSpot Tutoring Services
-- Mini Project: Bucket List
 
 ## Examples <a name="examples"></a> 
-![contact](image.png)
-![resume](image-1.png)
-![portfolio](image-2.png)
+![home](image.png)
+![saved](image-1.png)
 
 ## License <a name="license"></a>
     N/A
