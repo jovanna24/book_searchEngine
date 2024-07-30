@@ -31,7 +31,10 @@ const LoginForm = () => {
 
     try {
       const {data} = await loginUserMutation({
-        variables: { ...userFormData },
+        variables: { 
+          usernameOrEmail: userFormData.email,
+          password: userFormData.password
+        },
       })
 
       const { token } = data.login;
