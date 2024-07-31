@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "dev": "nodemon server.js",
+    "prod": "NODE_ENV=production nodemon server.js",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "node server/config/seeds.js",
     "build": "cd client && npm run build",
